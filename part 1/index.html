@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks</title>
+</head>
+<body>
+    <label for="">Marks: </label>
+    <input type="text">
+    <button>Submit</button>
+
+    <h2>Response: </h2>
+    <div class="response"></div>
+
+  <script>
+    var button = document.querySelector('button')
+    button.addEventListener('click', 
+    function() {
+        var input = document.querySelector('input')
+        var marks = input.value
+
+        if (marks >= 80) {
+        console.log("You scored an A!")
+        } else if (marks >= 70) {
+        console.log("You scored a B")
+        } else if (marks >= 50) {
+        console.log("You've passed")
+        } else {
+        console.log("Sorry you'll have to take the exam again...")
+        }
+    })
+  </script>
+</body>
+</html>
